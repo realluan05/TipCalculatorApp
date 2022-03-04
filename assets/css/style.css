@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+/* line 4, ../scss/style.scss */
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono";
+  font-size: 24px;
+}
+
+/* line 10, ../scss/style.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 19, ../scss/style.scss */
+button {
+  border: 0;
+  background-color: transparent;
+}
