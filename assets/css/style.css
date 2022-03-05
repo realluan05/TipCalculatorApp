@@ -60,16 +60,14 @@ input[type="text"]::placeholder {
 
 /* line 51, ../scss/style.scss */
 .btn-reset {
-  position: absolute;
-  bottom: 40px;
-  left: 30px;
-  width: 86%;
+  width: 100%;
   background-color: #26c0ab;
   color: #00494d;
   padding: 7px;
+  margin: 50px 0 0;
 }
 
-/* line 63, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 body {
   background-color: #c5e4e7;
   width: 100%;
@@ -78,12 +76,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* line 71, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 body h1 {
   margin: 0 0 60px;
   text-align: center;
 }
-/* line 76, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 body main {
   display: flex;
   flex-wrap: wrap;
@@ -91,86 +89,102 @@ body main {
   background-color: white;
   border-radius: 15px;
 }
-/* line 83, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 body main > div {
   flex: 0 0 50%;
 }
-/* line 87, ../scss/style.scss */
+/* line 85, ../scss/style.scss */
 body main .col1 {
   padding-right: 30px;
 }
-/* line 90, ../scss/style.scss */
-body main .col1 > div {
+/* line 88, ../scss/style.scss */
+body main .col1 > div:not(.peoples) {
   margin: 0 0 30px;
 }
-/* line 94, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 body main .col1 label {
   display: block;
   font-size: 16px;
   color: #5e7a7d;
   margin: 0 0 10px;
 }
-/* line 101, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 body main .col1 #bill {
   background: url("../images/icon-dollar.svg") no-repeat #f4fafa;
 }
-/* line 105, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 body main .col1 #number-people {
   background: url("../images/icon-person.svg") no-repeat #f4fafa;
 }
-/* line 109, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 body main .col1 #bill, body main .col1 #number-people {
   background-position: 15px 50%;
   padding-left: 45px;
 }
-/* line 114, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 body main .col1 .tip-percentage {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 119, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 body main .col1 .tip-percentage * {
   flex: 0 0 30%;
   margin: 0 0 15px;
   padding: 5px;
 }
-/* line 125, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 body main .col1 .tip-percentage input {
   text-align: center;
   color: #5e7a7d;
 }
-/* line 129, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 body main .col1 .tip-percentage input::placeholder {
   color: #5e7a7d;
 }
-/* line 136, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 body main .col2 {
+  width: 100%;
   background-color: #00494d;
   color: white;
   border-radius: 15px;
   padding: 40px 30px 30px;
   position: relative;
 }
-/* line 143, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 body main .col2 > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 50px;
 }
-/* line 150, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 body main .col2 h2 {
   font-size: 16px;
 }
-/* line 153, ../scss/style.scss */
+/* line 152, ../scss/style.scss */
 body main .col2 h2 span {
   font-size: 14px;
   color: #7f9c9f;
   display: block;
 }
-/* line 160, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 body main .col2 .price {
   color: #26c0ab;
   font-size: 35px;
+}
+
+@media (max-width: 768px) {
+  /* line 169, ../scss/style.scss */
+  body h1 {
+    margin: 30px 0;
+  }
+  /* line 173, ../scss/style.scss */
+  body main > div {
+    flex: 0 0 100%;
+  }
+  /* line 176, ../scss/style.scss */
+  body main > div.col1 {
+    padding: 0 0 30px;
+  }
 }
