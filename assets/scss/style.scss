@@ -26,6 +26,12 @@ button {
     cursor: pointer;
     color: $white;
     border-radius: 4px;
+    transition: .2s;
+}
+
+button.active {
+    background-color: $strong-cyan;
+    color: $very-dark-cyan;
 }
 
 input[type="text"] {

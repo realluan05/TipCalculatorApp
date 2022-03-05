@@ -34,9 +34,16 @@ button {
   cursor: pointer;
   color: white;
   border-radius: 4px;
+  transition: .2s;
 }
 
-/* line 31, ../scss/style.scss */
+/* line 32, ../scss/style.scss */
+button.active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+/* line 37, ../scss/style.scss */
 input[type="text"] {
   border: 0;
   width: 100%;
@@ -46,12 +53,12 @@ input[type="text"] {
   text-align: right;
   color: #7f9c9f;
 }
-/* line 40, ../scss/style.scss */
+/* line 46, ../scss/style.scss */
 input[type="text"]::placeholder {
   color: #7f9c9f;
 }
 
-/* line 45, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .btn-reset {
   position: absolute;
   bottom: 40px;
@@ -62,7 +69,7 @@ input[type="text"]::placeholder {
   padding: 7px;
 }
 
-/* line 57, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 body {
   background-color: #c5e4e7;
   width: 100%;
@@ -71,12 +78,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* line 65, ../scss/style.scss */
+/* line 71, ../scss/style.scss */
 body h1 {
   margin: 0 0 60px;
   text-align: center;
 }
-/* line 70, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 body main {
   display: flex;
   flex-wrap: wrap;
@@ -84,60 +91,60 @@ body main {
   background-color: white;
   border-radius: 15px;
 }
-/* line 77, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 body main > div {
   flex: 0 0 50%;
 }
-/* line 81, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 body main .col1 {
   padding-right: 30px;
 }
-/* line 84, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 body main .col1 > div {
   margin: 0 0 30px;
 }
-/* line 88, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 body main .col1 label {
   display: block;
   font-size: 16px;
   color: #5e7a7d;
   margin: 0 0 10px;
 }
-/* line 95, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 body main .col1 #bill {
   background: url("../images/icon-dollar.svg") no-repeat #f4fafa;
 }
-/* line 99, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 body main .col1 #number-people {
   background: url("../images/icon-person.svg") no-repeat #f4fafa;
 }
-/* line 103, ../scss/style.scss */
+/* line 109, ../scss/style.scss */
 body main .col1 #bill, body main .col1 #number-people {
   background-position: 15px 50%;
   padding-left: 45px;
 }
-/* line 108, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 body main .col1 .tip-percentage {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 113, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 body main .col1 .tip-percentage * {
   flex: 0 0 30%;
   margin: 0 0 15px;
   padding: 5px;
 }
-/* line 119, ../scss/style.scss */
+/* line 125, ../scss/style.scss */
 body main .col1 .tip-percentage input {
   text-align: center;
   color: #5e7a7d;
 }
-/* line 123, ../scss/style.scss */
+/* line 129, ../scss/style.scss */
 body main .col1 .tip-percentage input::placeholder {
   color: #5e7a7d;
 }
-/* line 130, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 body main .col2 {
   background-color: #00494d;
   color: white;
@@ -145,24 +152,24 @@ body main .col2 {
   padding: 40px 30px 30px;
   position: relative;
 }
-/* line 137, ../scss/style.scss */
+/* line 143, ../scss/style.scss */
 body main .col2 > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 50px;
 }
-/* line 144, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 body main .col2 h2 {
   font-size: 16px;
 }
-/* line 147, ../scss/style.scss */
+/* line 153, ../scss/style.scss */
 body main .col2 h2 span {
   font-size: 14px;
   color: #7f9c9f;
   display: block;
 }
-/* line 154, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
 body main .col2 .price {
   color: #26c0ab;
   font-size: 35px;
