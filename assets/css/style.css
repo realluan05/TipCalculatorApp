@@ -52,13 +52,14 @@ input[type="text"] {
   padding: 5px 15px;
   text-align: right;
   color: #7f9c9f;
+  outline-color: #26c0ab;
 }
-/* line 46, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 input[type="text"]::placeholder {
   color: #7f9c9f;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 .btn-reset {
   width: 100%;
   background-color: #26c0ab;
@@ -66,8 +67,12 @@ input[type="text"]::placeholder {
   padding: 7px;
   margin: 50px 0 0;
 }
+/* line 59, ../scss/style.scss */
+.btn-reset.disabled {
+  opacity: .5;
+}
 
-/* line 61, ../scss/style.scss */
+/* line 66, ../scss/style.scss */
 body {
   background-color: #c5e4e7;
   width: 100%;
@@ -76,12 +81,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* line 69, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 body h1 {
   margin: 0 0 60px;
   text-align: center;
 }
-/* line 74, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 body main {
   display: flex;
   flex-wrap: wrap;
@@ -89,60 +94,61 @@ body main {
   background-color: white;
   border-radius: 15px;
 }
-/* line 81, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 body main > div {
   flex: 0 0 50%;
 }
-/* line 85, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 body main .col1 {
   padding-right: 30px;
 }
-/* line 88, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 body main .col1 > div:not(.peoples) {
   margin: 0 0 30px;
 }
-/* line 92, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 body main .col1 label {
   display: block;
   font-size: 16px;
   color: #5e7a7d;
   margin: 0 0 10px;
 }
-/* line 99, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 body main .col1 #bill {
   background: url("../images/icon-dollar.svg") no-repeat #f4fafa;
 }
-/* line 103, ../scss/style.scss */
+/* line 108, ../scss/style.scss */
 body main .col1 #number-people {
   background: url("../images/icon-person.svg") no-repeat #f4fafa;
 }
-/* line 107, ../scss/style.scss */
+/* line 112, ../scss/style.scss */
 body main .col1 #bill, body main .col1 #number-people {
   background-position: 15px 50%;
   padding-left: 45px;
 }
-/* line 112, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 body main .col1 .tip-percentage {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 117, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 body main .col1 .tip-percentage * {
   flex: 0 0 30%;
   margin: 0 0 15px;
   padding: 5px;
 }
-/* line 123, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 body main .col1 .tip-percentage input {
-  text-align: center;
+  text-align: right;
   color: #5e7a7d;
 }
-/* line 127, ../scss/style.scss */
+/* line 132, ../scss/style.scss */
 body main .col1 .tip-percentage input::placeholder {
   color: #5e7a7d;
+  text-align: center;
 }
-/* line 134, ../scss/style.scss */
+/* line 140, ../scss/style.scss */
 body main .col2 {
   width: 100%;
   background-color: #00494d;
@@ -151,39 +157,39 @@ body main .col2 {
   padding: 40px 30px 30px;
   position: relative;
 }
-/* line 142, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 body main .col2 > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 50px;
 }
-/* line 149, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 body main .col2 h2 {
   font-size: 16px;
 }
-/* line 152, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 body main .col2 h2 span {
   font-size: 14px;
   color: #7f9c9f;
   display: block;
 }
-/* line 159, ../scss/style.scss */
+/* line 165, ../scss/style.scss */
 body main .col2 .price {
   color: #26c0ab;
   font-size: 35px;
 }
 
 @media (max-width: 768px) {
-  /* line 169, ../scss/style.scss */
+  /* line 175, ../scss/style.scss */
   body h1 {
     margin: 30px 0;
   }
-  /* line 173, ../scss/style.scss */
+  /* line 179, ../scss/style.scss */
   body main > div {
     flex: 0 0 100%;
   }
-  /* line 176, ../scss/style.scss */
+  /* line 182, ../scss/style.scss */
   body main > div.col1 {
     padding: 0 0 30px;
   }
