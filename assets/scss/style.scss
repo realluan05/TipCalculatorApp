@@ -82,6 +82,8 @@ body {
         padding: 25px;
         background-color: $white;
         border-radius: 15px;
+        max-width: 1000px;
+        width: 100%;
 
         > div {
             flex: 0 0 50%;
@@ -119,7 +121,7 @@ body {
                 justify-content: space-between;
                 flex-wrap: wrap;
 
-                * {
+                input[type="text"] {
                     flex: 0 0 30%;
                     margin: 0 0 15px;
                     padding: 5px;
@@ -132,6 +134,21 @@ body {
                     &::placeholder {
                         color: $dark-grayish-cyan;
                         text-align: center;
+                    }
+
+                    &:not(.last) {
+                        border: 0;
+                        background-color: $very-dark-cyan;
+                        cursor: pointer;
+                        color: $white;
+                        border-radius: 4px;
+                        transition: .2s;
+                        text-align: center;
+
+                        &.active {
+                            background-color: $strong-cyan;
+                            color: $very-dark-cyan;
+                        }
                     }
                 }
             }

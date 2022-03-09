@@ -93,62 +93,79 @@ body main {
   padding: 25px;
   background-color: white;
   border-radius: 15px;
+  max-width: 1000px;
+  width: 100%;
 }
-/* line 86, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 body main > div {
   flex: 0 0 50%;
 }
-/* line 90, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 body main .col1 {
   padding-right: 30px;
 }
-/* line 93, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 body main .col1 > div:not(.peoples) {
   margin: 0 0 30px;
 }
-/* line 97, ../scss/style.scss */
+/* line 99, ../scss/style.scss */
 body main .col1 label {
   display: block;
   font-size: 16px;
   color: #5e7a7d;
   margin: 0 0 10px;
 }
-/* line 104, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 body main .col1 #bill {
   background: url("../images/icon-dollar.svg") no-repeat #f4fafa;
 }
-/* line 108, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 body main .col1 #number-people {
   background: url("../images/icon-person.svg") no-repeat #f4fafa;
 }
-/* line 112, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 body main .col1 #bill, body main .col1 #number-people {
   background-position: 15px 50%;
   padding-left: 45px;
 }
-/* line 117, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 body main .col1 .tip-percentage {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 122, ../scss/style.scss */
-body main .col1 .tip-percentage * {
+/* line 124, ../scss/style.scss */
+body main .col1 .tip-percentage input[type="text"] {
   flex: 0 0 30%;
   margin: 0 0 15px;
   padding: 5px;
 }
-/* line 128, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 body main .col1 .tip-percentage input {
   text-align: right;
   color: #5e7a7d;
 }
-/* line 132, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 body main .col1 .tip-percentage input::placeholder {
   color: #5e7a7d;
   text-align: center;
 }
-/* line 140, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
+body main .col1 .tip-percentage input:not(.last) {
+  border: 0;
+  background-color: #00494d;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  transition: .2s;
+  text-align: center;
+}
+/* line 148, ../scss/style.scss */
+body main .col1 .tip-percentage input:not(.last).active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+/* line 157, ../scss/style.scss */
 body main .col2 {
   width: 100%;
   background-color: #00494d;
@@ -157,39 +174,39 @@ body main .col2 {
   padding: 40px 30px 30px;
   position: relative;
 }
-/* line 148, ../scss/style.scss */
+/* line 165, ../scss/style.scss */
 body main .col2 > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 0 50px;
 }
-/* line 155, ../scss/style.scss */
+/* line 172, ../scss/style.scss */
 body main .col2 h2 {
   font-size: 16px;
 }
-/* line 158, ../scss/style.scss */
+/* line 175, ../scss/style.scss */
 body main .col2 h2 span {
   font-size: 14px;
   color: #7f9c9f;
   display: block;
 }
-/* line 165, ../scss/style.scss */
+/* line 182, ../scss/style.scss */
 body main .col2 .price {
   color: #26c0ab;
   font-size: 35px;
 }
 
 @media (max-width: 768px) {
-  /* line 175, ../scss/style.scss */
+  /* line 192, ../scss/style.scss */
   body h1 {
     margin: 30px 0;
   }
-  /* line 179, ../scss/style.scss */
+  /* line 196, ../scss/style.scss */
   body main > div {
     flex: 0 0 100%;
   }
-  /* line 182, ../scss/style.scss */
+  /* line 199, ../scss/style.scss */
   body main > div.col1 {
     padding: 0 0 30px;
   }
