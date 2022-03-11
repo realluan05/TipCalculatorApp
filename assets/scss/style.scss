@@ -92,7 +92,7 @@ body {
         .col1 {
             padding-right: 30px;
 
-            > div:not(.peoples) {
+            > div:not(.tip) {
                 margin: 0 0 30px;
             }
 
@@ -149,6 +149,10 @@ body {
                             background-color: $strong-cyan;
                             color: $very-dark-cyan;
                         }
+                    }
+
+                    &:last-child {
+                        text-align: center;
                     }
                 }
             }
