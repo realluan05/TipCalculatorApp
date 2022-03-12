@@ -58,6 +58,7 @@ input[type="text"] {
 
     &.disabled {
         opacity: .5;
+        cursor: auto;
     }
 }
 
@@ -66,13 +67,12 @@ input[type="text"] {
 body {
     background-color: $light-grayish-cyan;
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
     h1 {
-        margin: 0 0 60px;
+        margin: 60px 0;
         text-align: center;
     }
 
@@ -187,6 +187,16 @@ body {
                 color: $strong-cyan;
                 font-size: 35px;
             }
+        }
+    }
+}
+
+@media (min-width: 1370px){
+    body {
+        height: 100vh;
+
+        h1 {
+            margin: 0 0 60px;
         }
     }
 }

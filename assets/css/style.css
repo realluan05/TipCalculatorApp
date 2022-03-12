@@ -70,20 +70,20 @@ input[type="text"]::placeholder {
 /* line 59, ../scss/style.scss */
 .btn-reset.disabled {
   opacity: .5;
+  cursor: auto;
 }
 
-/* line 66, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 body {
   background-color: #c5e4e7;
   width: 100%;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /* line 74, ../scss/style.scss */
 body h1 {
-  margin: 0 0 60px;
+  margin: 60px 0;
   text-align: center;
 }
 /* line 79, ../scss/style.scss */
@@ -201,16 +201,26 @@ body main .col2 .price {
   font-size: 35px;
 }
 
+@media (min-width: 1370px) {
+  /* line 195, ../scss/style.scss */
+  body {
+    height: 100vh;
+  }
+  /* line 198, ../scss/style.scss */
+  body h1 {
+    margin: 0 0 60px;
+  }
+}
 @media (max-width: 768px) {
-  /* line 196, ../scss/style.scss */
+  /* line 206, ../scss/style.scss */
   body h1 {
     margin: 30px 0;
   }
-  /* line 200, ../scss/style.scss */
+  /* line 210, ../scss/style.scss */
   body main > div {
     flex: 0 0 100%;
   }
-  /* line 203, ../scss/style.scss */
+  /* line 213, ../scss/style.scss */
   body main > div.col1 {
     padding: 0 0 30px;
   }
