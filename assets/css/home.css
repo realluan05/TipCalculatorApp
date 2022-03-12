@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+/* line 4, ../scss/home.scss */
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono";
+  font-size: 18px;
+}
+
+/* line 10, ../scss/home.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../scss/home.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 19, ../scss/home.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 23, ../scss/home.scss */
+figure {
+  margin: 5px 0 0;
+}
+
+/* line 29, ../scss/home.scss */
+body {
+  background-color: #c5e4e7;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 37, ../scss/home.scss */
+body h1 {
+  margin: 0 0 60px;
+  text-align: center;
+}
+/* line 42, ../scss/home.scss */
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 25px 25px;
+  background-color: white;
+  border-radius: 15px;
+  max-width: 1000px;
+  width: 100%;
+  gap: 0 30px;
+}
+/* line 53, ../scss/home.scss */
+body main > a {
+  color: #00494d;
+  text-align: center;
+}

@@ -6,10 +6,7 @@
     <meta name="description" content="Building a tip calculator based on the Front Mentor website challenge.">
     <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <script src="./assets/js/lib/jquery-3.6.0.min.js" defer></script>
-    <script src="./assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/home.css">
 
     <title>Tip Calculator App</title>
 </head>
@@ -23,45 +20,18 @@
         </header>
 
         <main>
-            <div class="col1">
-                <div class="bill">
-                    <label for="bill">Bill</label>
-                    <input type="text" name="bill" id="bill" placeholder="0" />
-                </div>
-                <div class="tip">
-                    <label for="custom">Select Tip %</label>
-                    <div class="tip-percentage">
-                        <input type="text" value="5" readonly />
-                        <input type="text" value="10" readonly />
-                        <input type="text" value="15" readonly />
-                        <input type="text" value="25" readonly />
-                        <input type="text" value="50" readonly />
-                        <input class="last" type="text" placeholder="Custom" id="custom" name="custom" />
-                    </div>
-                </div>
-                <div class="peoples">
-                    <label for="number-people">Number of people</label>
-                    <input type="text" name="number-people" id="number-people" placeholder="0" />
-                </div>
-            </div>
-            <div class="col2">
-                <div class="tip-amount">
-                    <h2>
-                        Tip Amount
-                        <span>/ person</span>
-                    </h2>
-                    <span class="price" id="totals-tip-amount">$0.00</span>
-                </div>
-                <div class="totals">
-                    <h2>
-                        Total
-                        <span>/ person</span>
-                    </h2>
-                    <span class="price" id="totals">$0.00</span>
-                </div>
-
-                <button class="btn-reset disabled" disabled>RESET</button>
-            </div>
+            <a href="./template/en-us.html" title="Access app in EN-US">
+                Access app in<br />EN-US
+                <figure>
+                    <img src="./assets/images/icon-eua.png" alt="EN-US" loading="lazy" />
+                </figure>
+            </a>
+            <a href="./template/pt-br.html" title="Acessar app em PT-BR">
+                Acessar app em<br />PT-BR
+                <figure>
+                    <img src="./assets/images/icon-brasil.png" alt="PT-BR" loading="lazy" />
+                </figure>
+            </a>
         </main>
     </div>
 
