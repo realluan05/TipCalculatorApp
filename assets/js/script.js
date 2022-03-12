@@ -30,7 +30,7 @@ jQuery(document).ready(function($y){
             if (bill.val() != '' && numberPeople.val() != '' && $y(this).val() != '') {
                 let tip = $y(this).val() / 100;
                 let results = (bill.val() / numberPeople.val()) * tip;
-                $y('#totals-tip-amount').text(`$ ${round(results)}`);
+                $y('#totals-tip-amount').text(`$${round(results)}`);
             }
         });
     });
@@ -38,7 +38,7 @@ jQuery(document).ready(function($y){
     bill.focusout(function(){
         if (bill.val() != '' && numberPeople.val() != '') {
             let results = bill.val() / numberPeople.val();
-            $y('#totals').text(`$ ${round(results)}`);
+            $y('#totals').text(`$${round(results)}`);
         }
 
         if (bill.val() != '' && numberPeople.val() != '' && porcentTip.val() != '') {
@@ -50,7 +50,7 @@ jQuery(document).ready(function($y){
     numberPeople.focusout(function(){
         if (bill.val() != '' && numberPeople.val() != '') {
             let results = bill.val() / numberPeople.val();
-            $y('#totals').text(`$ ${round(results)}`);
+            $y('#totals').text(`$${round(results)}`);
         }
 
         if (bill.val() != '' && numberPeople.val() != '' && porcentTip.val() != '') {
@@ -64,8 +64,8 @@ jQuery(document).ready(function($y){
         numberPeople.val("");
         custom.val("");
         porcentTip.removeClass('active');
-        $y('#totals-tip-amount').text("$ 0.00");
-        $y('#totals').text("$ 0.00");
+        $y('#totals-tip-amount').text("$0.00");
+        $y('#totals').text("$0.00");
         $y(this).attr('disabled', 'disabled');
         $y(this).addClass('disabled');
     });
