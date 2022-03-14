@@ -47,12 +47,22 @@ jQuery(document).ready(function($y){
                 buttonReset.removeClass('disabled');
             }
 
-            percentageTip($y('.tip-percentage > input'));
+            percentageTip($y('.tip-percentage > input.active'));
         });
     }
 
     updateTotals(bill);
     updateTotals(numberPeople);
+
+    $y('.tip-percentage > input').each(function(){
+        $y(this).focusout(function(){
+            if (bill.val() != '' && numberPeople.val() != '' && $y(this).val() != '') {
+                let tip = $y(this).val() / 100;
+                let results = (bill.val() / numberPeople.val()) * tip;
+                tipAmount.text(`$${round(results)}`);
+            }
+        });
+    });
 
     porcentTip.click(function(){
         if ($y(this).hasClass('active')) {
@@ -66,16 +76,6 @@ jQuery(document).ready(function($y){
             buttonReset.removeAttr('disabled');
             buttonReset.removeClass('disabled');
         }
-    });
-
-    $y('.tip-percentage > input').each(function(){
-        $y(this).focusout(function(){
-            if (bill.val() != '' && numberPeople.val() != '' && $y(this).val() != '') {
-                let tip = $y(this).val() / 100;
-                let results = (bill.val() / numberPeople.val()) * tip;
-                tipAmount.text(`$${round(results)}`);
-            }
-        });
     });
 
     buttonReset.click(function(){
