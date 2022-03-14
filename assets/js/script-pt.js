@@ -3,7 +3,7 @@ jQuery(document).ready(function($y){
     const bill            = $y('#bill');
     const numberPeople    = $y('#number-people');
     const custom          = $y('#custom');
-    const porcentTip      = $y('.tip-percentage > input:not(.last)');
+    const porcentTip      = $y('.tip-percentage > input');
     let   tipAmount       = $y('#totals-tip-amount');
     let   totals          = $y('#totals');
     let   buttonReset     = $y('.btn-reset');
@@ -47,12 +47,22 @@ jQuery(document).ready(function($y){
                 buttonReset.removeClass('disabled');
             }
 
-            percentageTip($y('.tip-percentage > input'));
+            percentageTip($y('.tip-percentage > input.active'));
         });
     }
 
     updateTotals(bill);
     updateTotals(numberPeople);
+
+    $y('.tip-percentage > input').each(function(){
+        $y(this).focusout(function(){
+            if (bill.val() != '' && numberPeople.val() != '' && $y(this).val() != '') {
+                let tip = $y(this).val() / 100;
+                let results = (bill.val() / numberPeople.val()) * tip;
+                tipAmount.text(`R$${round(results)}`);
+            }
+        });
+    });
 
     porcentTip.click(function(){
         if ($y(this).hasClass('active')) {
@@ -66,16 +76,6 @@ jQuery(document).ready(function($y){
             buttonReset.removeAttr('disabled');
             buttonReset.removeClass('disabled');
         }
-    });
-
-    $y('.tip-percentage > input').each(function(){
-        $y(this).focusout(function(){
-            if (bill.val() != '' && numberPeople.val() != '' && $y(this).val() != '') {
-                let tip = $y(this).val() / 100;
-                let results = (bill.val() / numberPeople.val()) * tip;
-                tipAmount.text(`R$${round(results)}`);
-            }
-        });
     });
 
     buttonReset.click(function(){
